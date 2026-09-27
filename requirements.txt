@@ -1,0 +1,5 @@
+# Fiya - Halka Arz Takip Uygulaması
+# Python 3.8+
+
+yfinance>=0.2.0
+pillow>=9.0.0  # Opsiyonel: İkon oluşturma için

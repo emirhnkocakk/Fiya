@@ -1,0 +1,17 @@
+{
+  "hisseler": {
+    "THYAO": {
+      "fiyat": "250.75",
+      "gun": "30",
+      "adet": "100",
+      "tip": "Tavan"
+    },
+    "EREGL": {
+      "fiyat": "45.20",
+      "gun": "60",
+      "adet": "500",
+      "tip": "Taban"
+    }
+  },
+  "tema": "Aydınlık"
+}
