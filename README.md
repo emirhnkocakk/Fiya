@@ -57,6 +57,17 @@ Halkarz/
 - **Cross-platform Font**: Windows/macOS/Linux'ta uygun sistem fontları
 - **Memory Leak Koruması**: `after` callback ID'leri takip edilip kapanışta temizlenir
 
+## Veri Güncelleme Sıklığı
+
+| Bileşen | Sıklık | Açıklama |
+|---------|--------|----------|
+| **Piyasa Ticker Bandı** (BIST 100, BIST 30, NASDAQ, USD/TRY, EUR/TRY) | **60 saniye** | Üst kısımda kayan band, genel piyasa özeti |
+| **Portföy / Drawer** (kayıtlı hisseler) | **30 saniye** | Sol üst "Kayıtlı Hisselerim" panelindeki anlık fiyatlar |
+| **Manuel "Şimdi Güncelle"** | Anlık | Drawer'daki ⟳ butonuyla kullanıcı tetikler |
+| **Veri Çek (Hesaplayıcı)** | Anlık | "Veri Çek" butonuyla tek seferlik sorgu |
+
+> ⚠️ **Not**: yfinance API rate limitlerine tabidir. 10 saniyelik önbellek (cache) mekanizması ile aynı sembol için ardışık istekler yerel önbellekten karşılanır.
+
 ## Bilinen Sınırlamalar
 
 - Tavan/taban oranları sabit %10 olarak varsayılmıştır (gerçek veriler BIST'ten alınmalıdır)
