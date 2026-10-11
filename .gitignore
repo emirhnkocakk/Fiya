@@ -25,7 +25,6 @@ Thumbs.db
 # Application data
 *.json
 !hisseler.json.example
-fiya_para.ico
 
 # Logs
 *.log
